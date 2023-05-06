@@ -25,7 +25,7 @@ function LogoWithName(props) {
         component="a"
         href="/"
         sx={{
-          display: { xs: "none", md: "flex" },
+          display: "flex",
           fontFamily: "Barlow",
           textDecoration: "none",
           fontWeight: "200",

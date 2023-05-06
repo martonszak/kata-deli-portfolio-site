@@ -38,6 +38,7 @@ function CustomNavbar() {
                 height: "0.05rem",
                 marginX: "1rem",
                 backgroundColor: "black",
+                display: { xs: "flex", sm: "flex", md: "flex" },
               }}
             ></Box>
             <Box
@@ -55,16 +56,21 @@ function CustomNavbar() {
                 ></CustomButton>
               ))}
             </Box>
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <Box
+              sx={{
+                display: { xs: "flex", sm: "flex", md: "none" },
+                justifyContent: "center",
+              }}
+            >
               <IconButton
-                size="large"
                 aria-label="account of current user"
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
-                color="inherit"
+                sx={{ color: "#1253FF" }}
+                size="large"
               >
-                <MenuIcon />
+                <MenuIcon sx={{ fontSize: "3rem" }} />
               </IconButton>
               <Menu
                 id="menu-appbar"
@@ -91,24 +97,6 @@ function CustomNavbar() {
                 ))}
               </Menu>
             </Box>
-            <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-            <Typography
-              variant="h5"
-              noWrap
-              component="a"
-              href=""
-              sx={{
-                display: { xs: "flex", md: "none" },
-                flexGrow: 1,
-                fontFamily: "Barlow",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
-              }}
-            >
-              DELI KATA DOROTTYA
-            </Typography>
           </Toolbar>
         </Container>
       </AppBar>
