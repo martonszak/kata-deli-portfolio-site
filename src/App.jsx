@@ -1,14 +1,24 @@
 import "./App.css";
 import CustomNavbar from "./components/CustomNavbar";
-import { ThemeProvider } from "@mui/material";
-import theme from "./theme";
+
+import LandingPageTextBox from "./components/LandingPageTextBox";
+import { createContext, useState } from "react";
+import hunJson from "./data/hun.json";
+import engJson from "./data/eng.json";
+export const LanguageContext = createContext(null);
 
 function App() {
+  const [language, setLanguage] = useState(engJson);
+
+  function changeLanguage() {
+    language === engJson ? setLanguage(hunJson) : setLanguage(engJson);
+  }
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <CustomNavbar />
-      </ThemeProvider>
+      <LanguageContext.Provider value={language}>
+        <CustomNavbar onSwitch={changeLanguage} />
+        <LandingPageTextBox />
+      </LanguageContext.Provider>
     </>
   );
 }

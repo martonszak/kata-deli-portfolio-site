@@ -1,11 +1,13 @@
 import { Button } from "@mui/material";
 
 function CustomButton(props) {
-  const { label, onClick } = props;
+  const { onClick, buttonText } = props;
+
   return (
     <Button
+      
       onClick={onClick}
-      key={label}
+      key={1}
       sx={{
         color: "#1253FF",
         fontSize: "1.1rem",
@@ -25,7 +27,7 @@ function CustomButton(props) {
         },
       }}
     >
-      {label}
+      {buttonText}
     </Button>
   );
 }

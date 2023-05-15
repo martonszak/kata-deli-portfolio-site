@@ -7,15 +7,16 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import { useState } from "react";
 import CustomButton from "./CustomButton";
 import LogoWithName from "./LogoWithName";
-import { Divider } from "@mui/material";
+import { LanguageContext } from "../App";
+import { useContext } from "react";
 
-const pages = ["Projects", "CV"];
-
-function CustomNavbar() {
+function CustomNavbar(props) {
+  const { onSwitch } = props;
+  const language = useContext(LanguageContext);
+  const pages = Object.values(language.home.pages);
   const [anchorElNav, setAnchorElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -48,13 +49,18 @@ function CustomNavbar() {
                 justifyContent: "flex-end",
               }}
             >
-              {pages.map((page) => (
+              {pages.map((pageName) => (
                 <CustomButton
-                  label={page}
-                  key={page}
+                  buttonText={pageName}
+                  key={pageName}
                   onClick={handleCloseNavMenu}
                 ></CustomButton>
               ))}
+              <CustomButton
+                buttonText={language.home.switchlanguage}
+                key={language.home.switchlanguage}
+                onClick={onSwitch}
+              ></CustomButton>
             </Box>
             <Box
               sx={{
@@ -63,7 +69,6 @@ function CustomNavbar() {
               }}
             >
               <IconButton
-                aria-label="account of current user"
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
@@ -90,11 +95,16 @@ function CustomNavbar() {
                   display: { xs: "block", md: "none" },
                 }}
               >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                {pages.map((pageName) => (
+                  <MenuItem key={pageName} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{pageName}</Typography>
                   </MenuItem>
                 ))}
+                <MenuItem key={language.home.switchlanguage} onClick={onSwitch}>
+                  <Typography textAlign="center">
+                    {language.home.switchlanguage}
+                  </Typography>
+                </MenuItem>
               </Menu>
             </Box>
           </Toolbar>
