@@ -13,8 +13,9 @@ function LogoWithName(props) {
         component="img"
         onClick={handleClick}
         sx={{
-          height: 64,
+          height: { xs: 32, sm: 64 },
           cursor: "pointer",
+          marginLeft: { xs: 2, lg: 0 },
         }}
         src={DkLogoSvg}
       />
@@ -23,12 +24,12 @@ function LogoWithName(props) {
         component="a"
         href="/"
         sx={{
-          display: { xs: "none", sm: "flex" },
+          display: "flex",
           fontFamily: "Barlow",
           textDecoration: "none",
           fontWeight: "200",
           fontSize: 24,
-          marginLeft: 4,
+          marginLeft: { xs: 2, lg: 4 },
           color: "black",
         }}
       >

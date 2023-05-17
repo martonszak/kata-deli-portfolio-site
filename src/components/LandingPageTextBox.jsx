@@ -21,15 +21,28 @@ function LandingPageTextBox() {
         }}
       >
         <Stack
-          sx={{ backgroundColor: "#F2F2F2" }}
-          direction="row"
+          sx={{
+            backgroundColor: "#F2F2F2",
+          }}
+          direction={{ xs: "column-reverse", lg: "row" }}
           maxWidth="lg"
           justifyContent="center"
-          alignItems="flex-start"
-          spacing={10}
+          alignItems={{ xs: "center", lg: "flex-start" }}
+          spacing={{ xs: 4, lg: 10 }}
         >
-          <Stack spacing={4} direction="row" maxWidth="50%">
-            <Divider orientation="vertical" flexItem color="#1253FF" />
+          <Stack
+            spacing={{ xs: 0, lg: 4 }}
+            direction="row"
+            sx={{
+              maxWidth: { xs: "90%", lg: "50%" },
+            }}
+          >
+            <Divider
+              orientation="vertical"
+              flexItem
+              color="#1253FF"
+              sx={{ display: { xs: "none" } }}
+            />
             <Box>
               {texts.map((text, i) => (
                 <Typography key={i} sx={{ textAlign: "justify" }}>
@@ -58,7 +71,12 @@ function LandingPageTextBox() {
               ))}
             </Box>
           </Stack>
-          <Box sx={{ minWidth: "50%", height: 822 }}>
+          <Box
+            sx={{
+              minWidth: { xs: "100%", lg: "50%" },
+              height: { xs: 410, lg: 822 },
+            }}
+          >
             <Image
               src={cloudPicture}
               bgColor="#F2F2F2"

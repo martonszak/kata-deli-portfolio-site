@@ -32,15 +32,27 @@ function CustomNavbar(props) {
     <>
       <AppBar
         position="static"
-        sx={{ boxShadow: 0, height: 192, justifyContent: "center" }}
+        sx={{
+          boxShadow: 0,
+          height: { xs: 96, sm: 96, lg: 192 },
+          width: { xs: "100%" },
+          justifyContent: "center",
+        }}
       >
-        <Container maxWidth="lg" disableGutters>
-          <Toolbar disableGutters>
+        <Container maxWidth="lg" disableGutters sx={{ width: { xs: "100%" } }}>
+          <Toolbar
+            disableGutters
+            sx={{
+              justifyContent: {
+                xs: "space-between",
+              },
+            }}
+          >
             <LogoWithName />
             <Divider
               orientation="horizontal"
               color="black"
-              sx={{ flexGrow: 1, m: 4 }}
+              sx={{ flexGrow: 1, m: 4, display: { xs: "none", lg: "flex" } }}
             />
             <Box
               width="50%"

@@ -2,7 +2,6 @@ import { Box, IconButton, Stack } from "@mui/material";
 import DkLogoSvg from "../assets/dk_logo.svg";
 import EmailIcon from "@mui/icons-material/Email";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import { Divider } from "@mui/material";
 
 function Footer() {
   const handleClick = (event) => {
@@ -70,7 +69,7 @@ function Footer() {
               },
             }}
             size="large"
-            href={`https://www.instagram.com/delidorottya/`}
+            href={`https://www.instagram.com/delidorottya`}
             target="_blank"
           >
             <InstagramIcon
