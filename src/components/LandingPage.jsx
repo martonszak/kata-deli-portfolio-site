@@ -5,7 +5,7 @@ import { useContext } from "react";
 import cloudPicture from "../assets/clouds.webp";
 import Image from "mui-image";
 
-function LandingPageTextBox() {
+function LandingPage() {
   const language = useContext(LanguageContext);
   const texts = Object.values(language.home.texts);
   const workflow = Object.values(language.home.workflow);
@@ -92,4 +92,4 @@ function LandingPageTextBox() {
   );
 }
 
-export default LandingPageTextBox;
+export default LandingPage;

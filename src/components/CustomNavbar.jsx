@@ -17,7 +17,6 @@ import { Divider } from "@mui/material";
 function CustomNavbar(props) {
   const { onSwitch } = props;
   const language = useContext(LanguageContext);
-  const pages = Object.values(language.home.pages);
   const [anchorElNav, setAnchorElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -48,7 +47,7 @@ function CustomNavbar(props) {
               },
             }}
           >
-            <LogoWithName />
+            <LogoWithName linkTo="/" />
             <Divider
               orientation="horizontal"
               color="black"
@@ -62,13 +61,18 @@ function CustomNavbar(props) {
                 marginRight: { md: 2, lg: 0 },
               }}
             >
-              {pages.map((pageName) => (
-                <CustomButton
-                  buttonText={pageName}
-                  key={pageName}
-                  onClick={handleCloseNavMenu}
-                ></CustomButton>
-              ))}
+              <CustomButton
+                buttonText={language.home.pages.projects}
+                key={language.home.pages.projects}
+                onClick={handleCloseNavMenu}
+                linkTo="projects"
+              ></CustomButton>
+              <CustomButton
+                buttonText={language.home.pages.cv}
+                key={language.home.pages.cv}
+                onClick={handleCloseNavMenu}
+                linkTo="cv"
+              ></CustomButton>
               <CustomButton
                 buttonText={language.home.switchlanguage}
                 key={language.home.switchlanguage}
@@ -108,11 +112,22 @@ function CustomNavbar(props) {
                   display: { xs: "block", md: "none" },
                 }}
               >
-                {pages.map((pageName) => (
-                  <MenuItem key={pageName} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{pageName}</Typography>
-                  </MenuItem>
-                ))}
+                <MenuItem
+                  key={language.home.pages.projects}
+                  onClick={handleCloseNavMenu}
+                >
+                  <Typography textAlign="center">
+                    {language.home.pages.projects}
+                  </Typography>
+                </MenuItem>
+                <MenuItem
+                  key={language.home.pages.cv}
+                  onClick={handleCloseNavMenu}
+                >
+                  <Typography textAlign="center">
+                    {language.home.pages.cv}
+                  </Typography>
+                </MenuItem>
                 <MenuItem key={language.home.switchlanguage} onClick={onSwitch}>
                   <Typography textAlign="center">
                     {language.home.switchlanguage}
