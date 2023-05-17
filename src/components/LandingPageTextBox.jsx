@@ -24,7 +24,7 @@ function LandingPageTextBox() {
           sx={{
             backgroundColor: "#F2F2F2",
           }}
-          direction={{ xs: "column-reverse", md: "row", md: "row" }}
+          direction={{ xs: "column-reverse", md: "row" }}
           maxWidth="lg"
           justifyContent="center"
           alignItems={{ xs: "center", md: "flex-start" }}
@@ -36,7 +36,7 @@ function LandingPageTextBox() {
             direction="row"
             sx={{
               maxWidth: { xs: "90%", sm: "100%", md: "50%", lg: "50%" },
-              marginX: { sm: 2 },
+              marginX: { sm: 2, lg: 0 },
             }}
           >
             <Divider
