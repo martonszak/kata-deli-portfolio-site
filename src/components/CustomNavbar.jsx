@@ -34,7 +34,7 @@ function CustomNavbar(props) {
         position="static"
         sx={{
           boxShadow: 0,
-          height: { xs: 96, sm: 96, lg: 192 },
+          height: { xs: 96, sm: 96, md: 192, lg: 192 },
           width: { xs: "100%" },
           justifyContent: "center",
         }}
@@ -55,10 +55,11 @@ function CustomNavbar(props) {
               sx={{ flexGrow: 1, m: 4, display: { xs: "none", lg: "flex" } }}
             />
             <Box
-              width="50%"
+              width={{ md: "45%", lg: "50%" }}
               sx={{
                 display: { xs: "none", md: "flex" },
                 justifyContent: "space-between",
+                marginRight: { md: 2, lg: 0 },
               }}
             >
               {pages.map((pageName) => (

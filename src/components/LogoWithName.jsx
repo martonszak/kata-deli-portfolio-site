@@ -15,7 +15,7 @@ function LogoWithName(props) {
         sx={{
           height: { xs: 32, sm: 64 },
           cursor: "pointer",
-          marginLeft: { xs: 2, lg: 0 },
+          marginLeft: { xs: 2, sm: 2, md: 2, lg: 0 },
         }}
         src={DkLogoSvg}
       />
@@ -29,7 +29,7 @@ function LogoWithName(props) {
           textDecoration: "none",
           fontWeight: "200",
           fontSize: 24,
-          marginLeft: { xs: 2, lg: 4 },
+          marginLeft: { xs: 2, sm: 0, md: 0, lg: 4 },
           color: "black",
         }}
       >

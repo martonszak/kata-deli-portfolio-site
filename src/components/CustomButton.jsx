@@ -16,7 +16,7 @@ function CustomButton(props) {
         borderRadius: 0,
         borderWidth: 1,
         height: 48,
-        width: 164,
+        width: { md: 124, lg: 164 },
         ":hover": {
           backgroundColor: "#1253FF",
           color: "#F2F2F2",
