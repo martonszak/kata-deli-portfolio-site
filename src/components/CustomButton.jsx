@@ -5,21 +5,18 @@ function CustomButton(props) {
 
   return (
     <Button
-      
       onClick={onClick}
-      key={1}
       sx={{
         color: "#1253FF",
-        fontSize: "1.1rem",
+        fontSize: 16,
         fontWeight: "400",
         display: "block",
         textTransform: "capitalize",
         border: "solid",
-        borderRadius: "0",
-        borderWidth: "0.05rem",
-        height: "2.8rem",
-        marginX: "1rem",
-        width: "10rem",
+        borderRadius: 0,
+        borderWidth: 1,
+        height: 48,
+        width: 164,
         ":hover": {
           backgroundColor: "#1253FF",
           color: "#F2F2F2",

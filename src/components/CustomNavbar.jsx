@@ -12,6 +12,7 @@ import CustomButton from "./CustomButton";
 import LogoWithName from "./LogoWithName";
 import { LanguageContext } from "../App";
 import { useContext } from "react";
+import { Divider } from "@mui/material";
 
 function CustomNavbar(props) {
   const { onSwitch } = props;
@@ -29,24 +30,23 @@ function CustomNavbar(props) {
 
   return (
     <>
-      <AppBar position="static" sx={{ boxShadow: 0 }}>
-        <Container maxWidth="lg">
+      <AppBar
+        position="static"
+        sx={{ boxShadow: 0, height: 192, justifyContent: "center" }}
+      >
+        <Container maxWidth="lg" disableGutters>
           <Toolbar disableGutters>
             <LogoWithName />
+            <Divider
+              orientation="horizontal"
+              color="black"
+              sx={{ flexGrow: 1, m: 4 }}
+            />
             <Box
+              width="50%"
               sx={{
-                flexGrow: 1,
-                height: "0.05rem",
-                marginX: "1rem",
-                backgroundColor: "black",
-                display: { xs: "flex", sm: "flex", md: "flex" },
-              }}
-            ></Box>
-            <Box
-              sx={{
-                flexGrow: 0,
                 display: { xs: "none", md: "flex" },
-                justifyContent: "flex-end",
+                justifyContent: "space-between",
               }}
             >
               {pages.map((pageName) => (

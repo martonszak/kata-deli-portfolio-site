@@ -5,13 +5,21 @@
       "cv": "CV"
     },
     "switchlanguage": "HUN",
-    "introduction": "I'm Kata Deli, a graphic designer. I completed my studies at VISART College, majoring in Visual Communication - Graphic and Digital Design. \n I have been working as a graphic designer for more than 10 years, in various fields. I love my work and through it, I get to know different people, professional areas, and needs, and by assessing and getting to know them, I can create the most suitable visual solution for them. I consider it essential to be up to date with new trends and to keep up with the developing technical world, so I am constantly training myself in various courses (web design, UI design, animation, and kinetic typography). I adapt the graphic material to the customer's needs.",
+    "texts": {
+      "text_1": "I'm Kata Deli, a graphic designer. I completed my studies at VISART College, majoring in Visual Communication - Graphic and Digital Design.",
+      "text_2": "I have been working as a graphic designer for more than 10 years, in various fields. I love my work and through it, I get to know different people, professional areas, and needs, and by assessing and getting to know them, I can create the most suitable visual solution for them.",
+      "text_3": "I consider it essential to be up to date with new trends and to keep up with the developing technical world, so I am constantly training myself in various courses (web design, UI design, animation, and kinetic typography). I adapt the graphic material to the customer's needs."
+    },
+    "workflowtitle": "You can expect the following steps during the workflow:",
     "workflow": {
-      "title": "You can expect the following steps during the workflow:",
-      "a": "At the beginning of the design process, I map out the expectations and ideas.",
-      "b": "In the first round, I create several versions, and then, after consultation, I start on the most suitable path for the customer towards the final version.",
-      "c": "I will present the finished material and modify it as needed.",
-      "d": "I hand over the final graphic material to the client."
+      "text_4": "At the beginning of the design process, I map out the expectations and ideas.",
+      "text_5": "In the first round, I create several versions, and then, after consultation, I start on the most suitable path for the customer towards the final version.",
+      "text_6": "I will present the finished material and modify it as needed.",
+      "text_7": "I hand over the final graphic material to the client."
+    },
+    "footer": {
+      "contact": "CONTACT ME",
+      "email": "mailto:katadeli@gmail.com"
     }
   }
 }

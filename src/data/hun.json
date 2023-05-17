@@ -5,13 +5,21 @@
       "cv": "Önéletrajz"
     },
     "switchlanguage": "ENG",
-    "introduction": "Deli Kata vagyok, grafikus. Tanulmányaimat a VISART főiskolán végeztem, Vizuális kommunikáció - grafikai és digitális design szakon. Több mint 10 éve dolgozom grafikusként, változatos területeken. Szeretem a munkám, és hogy általa  különböző embereket , szakmai területeket és igényeket ismerek meg, és ezeket felmérve, megismerve  készíthetem el a számukra legmegfelelőbb vizuális megoldást. Fontosnak tartom, hogy napra kész legyek az új trendekkel és tartsam a lépést a fejlődő technikai világgal, ezért folyamatosan képzem magam különböző tanfolyamokon (webdesign, UI design, animáció, kinetikus tipográfia). A grafikai anyagot mindig az ügyfél igényeihez igazítom.",
+    "texts": {
+      "text_1": "Deli Kata vagyok, grafikus. Tanulmányaimat a VISART főiskolán végeztem, Vizuális kommunikáció - grafikai és digitális design szakon.",
+      "text_2": "Több mint 10 éve dolgozom grafikusként, változatos területeken. Szeretem a munkám, és hogy általa  különböző embereket , szakmai területeket és igényeket ismerek meg, és ezeket felmérve, megismerve  készíthetem el a számukra legmegfelelőbb vizuális megoldást.",
+      "text_3": "Fontosnak tartom, hogy napra kész legyek az új trendekkel és tartsam a lépést a fejlődő technikai világgal, ezért folyamatosan képzem magam különböző tanfolyamokon (webdesign, UI design, animáció, kinetikus tipográfia). A grafikai anyagot mindig az ügyfél igényeihez igazítom."
+    },
+    "workflowtitle": "Az alábbi lépésekre számíthat a munkafolyamat során:",
     "workflow": {
-      "title": "Az alábbi lépésekre számíthat a munkafolyamat során:",
-      "a": "A tervezés elején feltérképezem, hogy pontosan mik az elvárások, elképzelések.",
-      "b": "Első körben több változatot is készítek, és egyeztetések után az ügyfél számára legmegfelelőbb nyomvonalon indulok el a végső változat felé.",
-      "c": "Az elkészült anyagot bemutatom, igények szerint módosítom.",
-      "d": "Végső grafikai anyagot átadom az ügyfélnek."
+      "text_4": "A tervezés elején feltérképezem, hogy pontosan mik az elvárások, elképzelések.",
+      "text_5": "Első körben több változatot is készítek, és egyeztetések után az ügyfél számára legmegfelelőbb nyomvonalon indulok el a végső változat felé.",
+      "text_6": "Az elkészült anyagot bemutatom, igények szerint módosítom.",
+      "text_7": "Végső grafikai anyagot átadom az ügyfélnek."
+    },
+    "footer": {
+      "contact": "CONTACT ME",
+      "email": "mailto:katadeli@gmail.com"
     }
   }
 }

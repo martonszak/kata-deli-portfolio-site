@@ -5,6 +5,7 @@ import LandingPageTextBox from "./components/LandingPageTextBox";
 import { createContext, useState } from "react";
 import hunJson from "./data/hun.json";
 import engJson from "./data/eng.json";
+import Footer from "./components/Footer";
 export const LanguageContext = createContext(null);
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <LanguageContext.Provider value={language}>
         <CustomNavbar onSwitch={changeLanguage} />
         <LandingPageTextBox />
+        <Footer />
       </LanguageContext.Provider>
     </>
   );

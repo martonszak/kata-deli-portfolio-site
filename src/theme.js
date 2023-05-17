@@ -3,6 +3,7 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   typography: {
     fontFamily: "Barlow",
+    fontSize: 16,
   },
   palette: {
     primary: {
@@ -17,7 +18,7 @@ const theme = createTheme({
       xs: 0,
       sm: 600,
       md: 900,
-      lg: 1150,
+      lg: 1060,
       xl: 1536,
     },
   },
