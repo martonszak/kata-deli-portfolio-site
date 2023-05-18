@@ -35,7 +35,7 @@ function CvPage() {
             sx={{
               backgroundColor: "#E9E9E9",
               minWidth: "40%",
-              height: { xs: 1250, lg: 1850 },
+              height: { xs: 1250, sm: 1300, lg: 1850 },
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -119,7 +119,7 @@ function CvPage() {
               paddingTop: 4,
             }}
           >
-            <Box sx={{ textAlign: "left", width: "85%" }}>
+            <Box sx={{ textAlign: "left", width: { xs: "75%", lg: "85%" } }}>
               <Typography
                 key={language.cv.work_experience_title}
                 sx={{ fontWeight: 600, fontSize: 24 }}
