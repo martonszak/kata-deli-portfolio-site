@@ -21,5 +21,121 @@
       "contact": "CONTACT ME",
       "email": "mailto:katadeli@gmail.com"
     }
+  },
+  "cv": {
+    "studies": "STUDIES",
+    "schools": {
+      "school_1": {
+        "years": "2004 - 2008",
+        "name": "Visart - Ecol d’Art Maryse Eloy",
+        "title": "Graphic design"
+      },
+      "school_2": {
+        "years": "1998 - 2004",
+        "name": "Alternatív Közgazdasági Gimnázium",
+        "courses_title": "Courses:",
+        "courses": {
+          "title_1": "Photo lab",
+          "title_2": "Motion Pictures and the Media"
+        }
+      }
+    },
+    "language": "Language",
+    "language_skill": "English - B2 complex",
+    "programs_title": "Program knowledge",
+    "programs": {
+      "program_1": "Illustrator / Affinity Designer",
+      "program_2": "InDesign",
+      "program_3": "Photoshop",
+      "program_4": "Premiere Pro",
+      "program_5": "After Effects",
+      "program_6": "Dimension"
+    },
+    "others_title": "Other knowledge, skills and areas of interest:",
+    "others": {
+      "other_1": "Digital and analog photography",
+      "other_2": "Drawing",
+      "other_3": "Books",
+      "other_4": "Playing music",
+      "other_5": "Psychology"
+    },
+    "work_experience_title": "WORK EXPERIENCES",
+    "works": {
+      "work_1": {
+        "years": "2023",
+        "company": "Strike Price",
+        "job": "Branding and webdesign"
+      },
+      "work_2": {
+        "years": "2023",
+        "company": "Inventus Intézet",
+        "job": "Branding and webdesign"
+      },
+      "work_3": {
+        "years": "2022",
+        "company": "Kurtán Klára karrier tanácsadó és coach",
+        "job": "Branding and webdesign"
+      },
+      "work_4": {
+        "years": "2022",
+        "company": "Blockben",
+        "job": "Animation"
+      },
+      "work_5": {
+        "years": "2022",
+        "company": "Toma Picture",
+        "job": "Editorial design"
+      },
+      "work_6": {
+        "years": "2022",
+        "company": "Kraftbeton",
+        "job": "Visual design and wall decoration"
+      },
+      "work_7": {
+        "years": "2018",
+        "company": "Barna Máté - Designer",
+        "job": "Editorial design"
+      },
+      "work_8": {
+        "years": "2018",
+        "company": "Stellar Works",
+        "job": "Editorial design"
+      },
+      "work_9": {
+        "years": "2018",
+        "company": "Other Stories",
+        "job": "Newsletter template and business card design"
+      },
+      "work_10": {
+        "years": "2017",
+        "company": "Republic Group",
+        "job": "Social media ad"
+      },
+      "work_11": {
+        "years": "2016 - 2021",
+        "company": "DFO International - Art Director",
+        "job": "Branding, editorial design, webdesign, interior visual design, design elements for social media platforms"
+      },
+      "work_12": {
+        "years": "2014 - 2016",
+        "company": "Retro Jeans Company - Graphic Designer",
+        "job": "Branding, creating patterns and designs for garments, editorial design, mood boards, design elements for social media platforms, G-star, Sotch&soda, Superdry, Replay planning of marketing/social media materials for branches in Hungary"
+      },
+      "work_13": {
+        "years": "2014",
+        "company": "Doreeenka Jewellery",
+        "job": "Creating vector based design of jewellery"
+      },
+      "work_14": {
+        "years": "2011-2013",
+        "company": "Abacus Medicine Hungary",
+        "job": "Graphic design / editorial design, packaging, product photo"
+      },
+      "work_15": {
+        "years": "2010",
+        "company": "Seven Bt.",
+        "job": "Branding"
+      }
+    }
   }
 }

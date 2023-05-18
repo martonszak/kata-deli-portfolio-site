@@ -21,5 +21,121 @@
       "contact": "CONTACT ME",
       "email": "mailto:katadeli@gmail.com"
     }
+  },
+  "cv": {
+    "studies": "TANULMÁNYOK",
+    "schools": {
+      "school_1": {
+        "years": "2004 - 2008",
+        "name": "Visart - Ecol d’Art Maryse Eloy",
+        "title": "Szak/specializáció - Grafika"
+      },
+      "school_2": {
+        "years": "1998 - 2004",
+        "name": "Alternatív Közgazdasági Gimnázium",
+        "courses_title": "Tanfolyamok és képzések:",
+        "courses": {
+          "title_1": "Fotó laborálás",
+          "title_2": "Mozgóképkultúra és média ismeret"
+        }
+      }
+    },
+    "language": "Nyelvtudás",
+    "language_skill": "Angol - B2 complex",
+    "programs_title": "Program ismeretek",
+    "programs": {
+      "program_1": "Illustrator / Affinity Designer",
+      "program_2": "InDesign",
+      "program_3": "Photoshop",
+      "program_4": "Premiere Pro",
+      "program_5": "After Effects",
+      "program_6": "Dimension"
+    },
+    "others_title": "Egyéb ismeretek, készségek és érdeklődési területek",
+    "others": {
+      "other_1": "Digitális és analóg fotózás",
+      "other_2": "Rajzolás",
+      "other_3": "Könyvek",
+      "other_4": "Zeneszerzés",
+      "other_5": "Pszichologia / önismeret"
+    },
+    "work_experience_title": "SZAKMAI TAPASZTALATOK",
+    "works": {
+      "work_1": {
+        "years": "2023",
+        "company": "Strike Price",
+        "job": "Arculat és weboldal tervezés"
+      },
+      "work_2": {
+        "years": "2023",
+        "company": "Inventus Intézet",
+        "job": "Arculat és weboldal tervezés"
+      },
+      "work_3": {
+        "years": "2022",
+        "company": "Kurtán Klára karrier tanácsadó és coach",
+        "job": "Arculat és weboldal tervezés"
+      },
+      "work_4": {
+        "years": "2022",
+        "company": "Blockben",
+        "job": "Animáció"
+      },
+      "work_5": {
+        "years": "2022",
+        "company": "Toma Picture",
+        "job": "Kiadványszerkesztés"
+      },
+      "work_6": {
+        "years": "2022",
+        "company": "Kraftbeton",
+        "job": "Látványterv és fali dekoráció készítése"
+      },
+      "work_7": {
+        "years": "2018",
+        "company": "Barna Máté - Designer",
+        "job": "Kiadványszerkesztés"
+      },
+      "work_8": {
+        "years": "2018",
+        "company": "Stellar Works",
+        "job": "Kiadványszerkesztés"
+      },
+      "work_9": {
+        "years": "2018",
+        "company": "Other Stories",
+        "job": "Hírlevél sablon és névjegykártya tervezése"
+      },
+      "work_10": {
+        "years": "2017",
+        "company": "Republic Group",
+        "job": "Social media hirdetés"
+      },
+      "work_11": {
+        "years": "2016 - 2021",
+        "company": "DFO International - Art Director",
+        "job": "Arculat tervezés, kiadványszerkesztés, webdesign, látványtervek, social media anyagok grafikai tervezése"
+      },
+      "work_12": {
+        "years": "2014 - 2016",
+        "company": "Retro Jeans Company - Graphic Designer",
+        "job": "Arculat tervezés, patternek és kiegészítítő grafikák, kiadványszerkesztés, látványtervek, social media anyagok grafikai tervezése, G-star, Sotch&soda, Superdry, Replay magyarországi kirendeltségek számára márketing/social média anyagok tervezése"
+      },
+      "work_13": {
+        "years": "2014",
+        "company": "Doreeenka Jewellery",
+        "job": "Ékszerek vektoros tervezése"
+      },
+      "work_14": {
+        "years": "2011-2013",
+        "company": "Abacus Medicine Hungary",
+        "job": "Grafikai tervezés / kiadványszerkesztés, csomagolás tervezés, termék fotózás"
+      },
+      "work_15": {
+        "years": "2010",
+        "company": "Seven Bt.",
+        "job": "Arculat tervezés"
+      }
+    }
   }
 }
