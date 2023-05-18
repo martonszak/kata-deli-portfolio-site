@@ -13,6 +13,7 @@ import LogoWithName from "./LogoWithName";
 import { LanguageContext } from "../App";
 import { useContext } from "react";
 import { Divider } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function CustomNavbar(props) {
   const { onSwitch } = props;
@@ -112,22 +113,32 @@ function CustomNavbar(props) {
                   display: { xs: "block", md: "none" },
                 }}
               >
-                <MenuItem
-                  key={language.home.pages.projects}
-                  onClick={handleCloseNavMenu}
+                <Link
+                  to="projects"
+                  style={{ textDecoration: "none", color: "black" }}
                 >
-                  <Typography textAlign="center">
-                    {language.home.pages.projects}
-                  </Typography>
-                </MenuItem>
-                <MenuItem
-                  key={language.home.pages.cv}
-                  onClick={handleCloseNavMenu}
+                  <MenuItem
+                    key={language.home.pages.projects}
+                    onClick={handleCloseNavMenu}
+                  >
+                    <Typography textAlign="center">
+                      {language.home.pages.projects}
+                    </Typography>
+                  </MenuItem>
+                </Link>
+                <Link
+                  to="cv"
+                  style={{ textDecoration: "none", color: "black" }}
                 >
-                  <Typography textAlign="center">
-                    {language.home.pages.cv}
-                  </Typography>
-                </MenuItem>
+                  <MenuItem
+                    key={language.home.pages.cv}
+                    onClick={handleCloseNavMenu}
+                  >
+                    <Typography textAlign="center">
+                      {language.home.pages.cv}
+                    </Typography>
+                  </MenuItem>
+                </Link>
                 <MenuItem key={language.home.switchlanguage} onClick={onSwitch}>
                   <Typography textAlign="center">
                     {language.home.switchlanguage}

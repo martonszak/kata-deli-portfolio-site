@@ -26,16 +26,16 @@ function CvPage() {
             backgroundColor: "#F2F2F2",
           }}
           justifyContent="space-between"
-          direction="row"
+          direction={{ xs: "column", lg: "row" }}
           width="100%"
           maxWidth="lg"
-          spacing={8}
+          spacing={{ xs: 0, lg: 8 }}
         >
           <Box
             sx={{
               backgroundColor: "#E9E9E9",
               minWidth: "40%",
-              height: 1850,
+              height: { xs: 1250, lg: 1850 },
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -92,7 +92,7 @@ function CvPage() {
                 {language.cv.programs_title}
               </Typography>
               {programs.map((program, i) => (
-                <Typography key={i}>{program}</Typography>
+                <Typography key={"program" + i}>{program}</Typography>
               ))}
               <br />
               <Typography sx={{ fontWeight: 600 }}>
@@ -101,7 +101,7 @@ function CvPage() {
               {others.map((other, i) => (
                 <Typography
                   sx={{ display: "list-item", marginLeft: 4 }}
-                  key={i}
+                  key={"other" + i}
                 >
                   {other}
                 </Typography>
@@ -120,22 +120,25 @@ function CvPage() {
             }}
           >
             <Box sx={{ textAlign: "left", width: "85%" }}>
-              <Typography sx={{ fontWeight: 600, fontSize: 24 }}>
+              <Typography
+                key={language.cv.work_experience_title}
+                sx={{ fontWeight: 600, fontSize: 24 }}
+              >
                 {language.cv.work_experience_title}
                 <br />
                 <br />
               </Typography>
               {works.map((work, i) => (
                 <>
-                  <Typography key={i}>
+                  <Typography key={"years" + i}>
                     {work.years}
                     <br />
                   </Typography>
-                  <Typography sx={{ fontWeight: 600 }} key={i}>
+                  <Typography sx={{ fontWeight: 600 }} key={"company" + i}>
                     {work.company}
                     <br />
                   </Typography>
-                  <Typography key={i}>
+                  <Typography key={"job" + i}>
                     {work.job}
                     <br />
                     <br />
