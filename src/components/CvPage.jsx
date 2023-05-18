@@ -35,7 +35,7 @@ function CvPage() {
             sx={{
               backgroundColor: "#E9E9E9",
               minWidth: "40%",
-              height: { xs: 1250, sm: 1300, lg: 1850 },
+              height: { xs: 1150, sm: 1300, lg: 1850 },
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
